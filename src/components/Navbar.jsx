@@ -10,10 +10,9 @@ const Navbar = () => {
       <nav>
         <div className='flex bg-purple-500 text-white h-14 items-center md:h-20 w-full'>
           <div>
-            <NavLink className="logos flex p-2 w-48 gap-3 md:h-20 md:w-80 md:items-center">
+            <NavLink className="logos flex p-2 w-full gap-3 md:h-20 md:w-80 space-x-3 md:items-center">
               <img src={reactLogo} alt="React Logo" className='md:w-12 md:h-12' />
-              <img src={viteLogo} alt="Vite Logo" className='md:w-12 md:h-12 md:absolute md:left-96' />
-              <span className=' font-semibold text-lg md:font-bold md:text-2xl'>Multi App</span>
+              <img src={viteLogo} alt="Vite Logo" className='md:w-12 md:h-12' />
             </NavLink>
           </div>
           <div className='flex justify-center items-center gap-5 w-full md:justify-end md:pr-12'>
@@ -28,7 +27,6 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-        
       </nav>
     );
   };
